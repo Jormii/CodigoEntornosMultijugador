@@ -23,7 +23,6 @@ public class T_Ejercicio4b {
 			while (colaDevoluciones[id].peek() != null) {
 				System.out.format("Valor devuelto por el servidor al cliente %d: %d\n", id, colaDevoluciones[id].remove());
 			}
-			// sleep(1);		// Pequeña pausa para poder visualizar los resultados
 		}
 	}
 
