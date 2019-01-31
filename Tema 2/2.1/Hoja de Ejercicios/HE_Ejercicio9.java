@@ -37,11 +37,14 @@ public class HE_Ejercicio9 {
 			
 			fichero[idxFragmento] = descargaDatos(idxFragmento);
 			System.out.format("El hilo %d ha descargado el fragmento %d\n", id, idxFragmento);
+			
+			// Principio apartado b)
 			if (idxFragmento == (N_FRAGMENTOS - 1)) {
 				System.out.flush();		// Para que otros hilos no impriman sobre el contenido fichero
 				System.out.format("El hilo %d ha descargado el ultimo fragmento\n", id);
 				mostrarFichero();
 			}
+			// Fin apartado b)
 		}
 	}
 
@@ -53,6 +56,10 @@ public class HE_Ejercicio9 {
 			createThread("downloader", i);
 		}
 		startThreadsAndWait();
+		
+		// Principio apartado a)
+		// mostrarFichero();
+		// Fin apartado a)
 	}
 
 }
