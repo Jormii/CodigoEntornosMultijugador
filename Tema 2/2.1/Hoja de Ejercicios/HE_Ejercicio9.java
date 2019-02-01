@@ -44,7 +44,6 @@ public class HE_Ejercicio9 {
 			fragmentosDescargados++;
 
 			if (fragmentosDescargados == N_FRAGMENTOS) {
-				// System.out.flush(); // Para que otros hilos no impriman sobre el contenido del fichero
 				System.out.format("El hilo %d ha descargado el ultimo fragmento\n", id);
 				mostrarFichero();
 			}
