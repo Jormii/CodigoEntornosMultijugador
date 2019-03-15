@@ -41,7 +41,7 @@ public class Sargento {
 	}
 
 	private boolean pelotonEstaListo() {
-		return peloton.size() > UMBRAL_RECLUTAMIENTO;
+		return peloton.size() == SOLDADOS_POR_PELOTON;
 	}
 
 	private void realizarMision() {
